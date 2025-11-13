@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Quality Switcher",
+  "version": "1.0",
+  "description": "Quickly change YouTube video quality with Q, W, E, R keys.",
+  
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "js": ["scripts/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  
+  "permissions": []
+}
